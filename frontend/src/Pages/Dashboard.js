@@ -324,27 +324,6 @@ class Dashboard extends React.Component {
                 title3="SPP"
                 tab3={<Spp />}
               />
-
-              <div className="text-center mt-4">
-                <button
-                  type="button"
-                  className="text-gray-800 text-sm"
-                  onClick={() => this.Logout()}
-                >
-                  Kembali ke halaman login
-                </button>
-                <p className="text-gray-500 text-sm">
-                  Hello World! |{" "}
-                  <a
-                    href="https://github.com/wisnusat"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    It's me Wisnu
-                  </a>
-                </p>
-                <p className="text-gray-500 text-sm">&copy;2021</p>
-              </div>
             </div>
           </div>
         </div>
