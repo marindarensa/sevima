@@ -10,7 +10,7 @@ import Kelas from "../Components/Table_Kelas";
 import Petugas from "../Components/Table_Petugas";
 import Siswa from "../Components/Table_Siswa";
 import Spp from "../Components/Table_Spp";
-import Laporan from "../Components/Table_laporan";
+import Laporan from "../Components/Table_Laporan";
 import Tunggakan from "../Components/Table_Tunggakan";
 
 class Dashboard extends React.Component {
