@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
         autoIncrement: true,
       },
-      kelas: DataTypes.STRING,
+      tahun: DataTypes.INTEGER,
       nominal: DataTypes.INTEGER,
     },
     {
