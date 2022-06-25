@@ -11,7 +11,7 @@ class Spp extends React.Component {
       message: "",
       found: "",
       id_spp: "",
-      kelas: "",
+      tahun: "",
       nominal: 0,
       action: "",
       userData: "",
@@ -65,7 +65,7 @@ class Spp extends React.Component {
     this.toggleModal(true);
     this.setState({
       action: "add",
-      kelas: "",
+      tahun: "",
       nominal: "",
     });
   };
@@ -75,7 +75,7 @@ class Spp extends React.Component {
     this.setState({
       action: "update",
       id_spp: selectedItem.id_spp,
-      kelas: selectedItem.kelas,
+      tahun: selectedItem.tahun,
       nominal: selectedItem.nominal,
     });
   };
@@ -103,7 +103,7 @@ class Spp extends React.Component {
 
     let form = {
       id_spp: this.state.id_spp,
-      kelas: this.state.kelas,
+      tahun: this.state.tahun,
       nominal: this.state.nominal,
     };
 
@@ -211,21 +211,21 @@ py-2 text-sm"
                                 <div class="grid grid-cols-6 gap-6">
                                   <div class="col-span-6 sm:col-span-3">
                                     <label
-                                      for="kelas"
+                                      for="tahun"
                                       class="block text-sm font-medium text-gray-700"
                                     >
-                                      Kelas
+                                      Tahun
                                     </label>
                                     <input
                                       type="text"
-                                      name="kelas"
-                                      id="kelas"
-                                      autocomplete="kelas"
+                                      name="tahun"
+                                      id="tahun"
+                                      autocomplete="tahun"
                                       class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                                      value={this.state.kelas}
+                                      value={this.state.tahun}
                                       onChange={(ev) =>
                                         this.setState({
-                                          kelas: ev.target.value,
+                                          tahun: ev.target.value,
                                         })
                                       }
                                       required
@@ -302,7 +302,7 @@ py-2 text-sm"
                         scope="col"
                         class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                       >
-                        Kelas
+                        Tahun
                       </th>
                       <th
                         scope="col"
@@ -343,7 +343,7 @@ py-2 text-sm"
                           <div class="text-sm text-gray-900">{item.id_spp}</div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-900">{item.kelas}</div>
+                          <div class="text-sm text-gray-900">{item.tahun}</div>
                         </td>
                         <td>
                           <div class="text-sm text-gray-900">
